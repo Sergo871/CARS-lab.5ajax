@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW – Automobile de Lux</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BMW – Bayerische Motoren Werke</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="bmw.html" class="active">BMW</a></li>
+            <li><a href="mclaren.html">McLaren</a></li>
+            <li><a href="porsche.html">Porsche</a></li>
+            <li><a href="formular.html">Formular</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="brand-intro">
+            <p>BMW este un producător german cunoscut pentru combinația dintre lux, performanță și tehnologie.
+               Fondată în 1916, compania produce unele dintre cele mai apreciate automobile sport și de lux din lume.</p>
+        </div>
+
+        <!-- Imagine cu MAP pentru selectare rapidă -->
+        <div class="map-wrapper">
+            <h2 class="section-title">Modele BMW (selectare rapidă)</h2>
+            <img src="images/bmw-m3-e30-stage-02-16x9.avif" usemap="#bmwmap" alt="Modele BMW" class="map-img" id="bmwMapImg">
+            <map name="bmwmap">
+                <area shape="rect" coords="0,0,200,300" href="#seria3" alt="BMW Seria 3">
+                <area shape="rect" coords="200,0,400,300" href="#x5" alt="BMW X5">
+                <area shape="rect" coords="400,0,600,300" href="#i8" alt="BMW i8">
+            </map>
+            <p class="map-hint">&#9654; Click pe imagine pentru a naviga la modelul dorit</p>
+        </div>
+
+        <!-- Grid cu modele BMW -->
+        <h2 class="section-title">Modele Populare</h2>
+
+        <div class="models-grid">
+
+            <div class="model-card" id="seria3">
+                <img src="images/ADRO-BMW-M3-And-M4-30.jpg" alt="BMW Seria 3 / M4">
+                <div class="model-info">
+                    <h3>BMW Seria 3 / M4</h3>
+                    <p>Berline sportivă, ideală pentru oraș și drumuri lungi. Combină eleganța cu performanța pură a unui motor M.</p>
+                </div>
+            </div>
+
+            <div class="model-card" id="x5">
+                <img src="images/bmw-m-series-x5-m-gallery-image-impressionen-02_1920_jpg_asset_1673025861930.jpg" alt="BMW X5 M">
+                <div class="model-info">
+                    <h3>BMW X5 M</h3>
+                    <p>SUV de lux, spațios și foarte puternic. Oferă confort premium și dinamică excepțională pe orice drum.</p>
+                </div>
+            </div>
+
+            <div class="model-card" id="i8">
+                <img src="images/1595434_p90316823-highres.jpg" alt="BMW i8">
+                <div class="model-info">
+                    <h3>BMW i8</h3>
+                    <p>Mașină sport hibridă cu design futurist. Combină un motor electric cu unul termic pentru o experiență unică.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-link">&#8592; Înapoi la pagina principală</a>
+
+    </div>
+
+    <footer>
+        <p>Lucrare de Laborator Nr. 4 &mdash; CSS &amp; Structuri Div</p>
+    </footer>
+
+    <script src="js/efecte.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracteristici Auto – Lab 5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Automobile de Lux</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+            <li><a href="mclaren.html">McLaren</a></li>
+            <li><a href="porsche.html">Porsche</a></li>
+            <li><a href="formular.html" class="active">Formular</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2 class="page-title">Caracteristici Automobile</h2>
+        <p class="page-subtitle">Introduceți datele tehnice — acestea vor fi salvate local în browser</p>
+
+        <!-- FORMULAR -->
+        <div class="form-card">
+            <form id="formAuto" onsubmit="return false">
+
+                <!-- SECTIUNEA 1: Identificare -->
+                <p class="form-section-title">01 — Identificare</p>
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="marca">Marca<span class="required">*</span></label>
+                        <select id="marca" name="marca">
+                            <option value="">— Selectați marca —</option>
+                            <option value="BMW">BMW</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Audi">Audi</option>
+                        </select>
+                        <span class="error-msg" id="err_marca"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" name="model" placeholder="ex: 720S, 911, M4...">
+                    </div>
+
+                </div>
+
+                <!-- SECTIUNEA 2: Performanta -->
+                <p class="form-section-title">02 — Performanță</p>
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="viteza">Viteză maximă (km/h)<span class="required">*</span></label>
+                        <input type="number" id="viteza" name="viteza"
+                               placeholder="ex: 320" min="50" max="500">
+                        <span class="error-msg" id="err_viteza"></span>
+                        <span id="hint_viteza" style="font-size:.78rem; margin-top:2px"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cp">Cai putere (CP)<span class="required">*</span></label>
+                        <input type="number" id="cp" name="cp"
+                               placeholder="ex: 720" min="50" max="2000">
+                        <span class="error-msg" id="err_cp"></span>
+                        <span id="hint_cp" style="font-size:.78rem; margin-top:2px"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="greutate">Greutate (kg)<span class="required">*</span></label>
+                        <input type="number" id="greutate" name="greutate"
+                               placeholder="ex: 1500" min="500" max="5000">
+                        <span class="error-msg" id="err_greutate"></span>
+                        <span id="hint_greutate" style="font-size:.78rem; margin-top:2px"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consum">Consum / 100 km (L)<span class="required">*</span></label>
+                        <input type="number" id="consum" name="consum"
+                               placeholder="ex: 10.5" min="1" max="50" step="0.1">
+                        <span class="error-msg" id="err_consum"></span>
+                        <span id="hint_consum" style="font-size:.78rem; margin-top:2px"></span>
+                    </div>
+
+                </div>
+
+                <!-- SECTIUNEA 3: Culoare -->
+                <p class="form-section-title">03 — Culoare caroserie</p>
+                <div class="form-group full-width">
+                    <div class="color-group">
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_negru" value="negru">
+                            <label class="color-swatch" for="c_negru">
+                                <span class="color-dot" style="background:#1a1a1a"></span>
+                                <span>Negru</span>
+                            </label>
+                        </div>
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_alb" value="alb">
+                            <label class="color-swatch" for="c_alb">
+                                <span class="color-dot" style="background:#f5f5f5"></span>
+                                <span>Alb</span>
+                            </label>
+                        </div>
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_rosu" value="rosu">
+                            <label class="color-swatch" for="c_rosu">
+                                <span class="color-dot" style="background:#cc2200"></span>
+                                <span>Roșu</span>
+                            </label>
+                        </div>
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_albastru" value="albastru">
+                            <label class="color-swatch" for="c_albastru">
+                                <span class="color-dot" style="background:#1a4a99"></span>
+                                <span>Albastru</span>
+                            </label>
+                        </div>
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_gri" value="gri">
+                            <label class="color-swatch" for="c_gri">
+                                <span class="color-dot" style="background:#888888"></span>
+                                <span>Gri</span>
+                            </label>
+                        </div>
+
+                        <div class="color-option">
+                            <input type="radio" name="culoare" id="c_portocaliu" value="portocaliu">
+                            <label class="color-swatch" for="c_portocaliu">
+                                <span class="color-dot" style="background:#e05a00"></span>
+                                <span>Portocaliu</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <span class="error-msg" id="err_culoare"></span>
+                </div>
+
+                <!-- BUTOANE -->
+                <button type="submit" id="btnSubmit" class="btn-submit">
+                    <span>&#9654; Trimite pe Server</span>
+                </button>
+                <button type="button" class="btn-reset" onclick="resetFormular()">
+                    ✕ Resetează formularul
+                </button>
+
+            </form>
+        </div>
+
+        <!-- ZONA REZULTAT AJAX -->
+        <div id="zonaRezultat" style="margin-top:20px"></div>
+
+        <!-- Info stocare -->
+        <div style="margin-top:20px; padding:16px 20px; background:#111118;
+                    border:1px solid #2a2a35; border-radius:4px; font-size:.85rem; color:#666;
+                    border-left:3px solid #2a2a35;">
+            <strong style="color:#888; letter-spacing:1px">ℹ INFO STOCARE:</strong>
+            Datele sunt salvate prin
+            <strong style="color:#999">localStorage</strong> direct în browser —
+            <code style="color:#c9a84c; background:#0d0d14; padding:2px 8px; border-radius:2px">date_auto</code>.
+            Funcționează complet static pe
+            <code style="color:#c9a84c; background:#0d0d14; padding:2px 8px; border-radius:2px">GitHub Pages</code>
+            fără server PHP.
+        </div>
+
+        <!-- SECTIUNEA LISTA -->
+        <div style="margin-top:30px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                <h3 style="margin:0;color:#c9a84c;font-size:1rem;letter-spacing:1px;text-transform:uppercase">
+                    Înregistrări salvate
+                </h3>
+                <button id="btnIncarcaLista" class="btn-reset" style="margin:0">
+                    ↻ Reîncarcă
+                </button>
+                <button id="btnStergeTot" class="btn-reset" style="margin:0;border-color:#e05050;color:#e05050">
+                    🗑 Șterge tot
+                </button>
+            </div>
+            <div id="zonaLista">
+                <p style="color:#666;font-size:.85rem">Apăsați butonul pentru a încărca lista.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Lucrare de Laborator Nr. 5 &mdash; AJAX + localStorage</p>
+    </footer>
+
+    <script src="js/validare.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+</html>

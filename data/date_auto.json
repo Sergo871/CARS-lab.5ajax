@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-04-22 09:11:41",
+    "marca": "BMW",
+    "model": "e39",
+    "viteza": 310.0,
+    "cp": 440.0,
+    "greutate": 1700.0,
+    "consum": 11.3,
+    "culoare": "negru"
+  },
+  {
+    "timestamp": "2026-04-22 09:12:15",
+    "marca": "Audi",
+    "model": "A4",
+    "viteza": 250.0,
+    "cp": 190.0,
+    "greutate": 1500.0,
+    "consum": 8.5,
+    "culoare": "alb"
+  },
+  {
+    "timestamp": "2026-04-22 09:13:05",
+    "marca": "Mercedes",
+    "model": "C-Class",
+    "viteza": 280.0,
+    "cp": 250.0,
+    "greutate": 1600.0,
+    "consum": 9.2,
+    "culoare": "gri"
+  },
+  {
+    "timestamp": "2026-04-22 09:14:30",
+    "marca": "Volkswagen",
+    "model": "Golf",
+    "viteza": 220.0,
+    "cp": 150.0,
+    "greutate": 1400.0,
+    "consum": 7.8,
+    "culoare": "albastru"
+  },
+  {
+    "timestamp": "2026-04-22 09:15:45",
+    "marca": "Porsche",
+    "model": "911",
+    "viteza": 320.0,
+    "cp": 450.0,
+    "greutate": 1600.0,
+    "consum": 12.5,
+    "culoare": "rosu"
+  },
+  {
+    "timestamp": "2026-04-22 10:38:56",
+    "marca": "Ferrari",
+    "model": "SF90 XX Spider",
+    "viteza": 340.0,
+    "cp": 1000.0,
+    "greutate": 1670.0,
+    "consum": 6.9,
+    "culoare": "rosu"
+  }
+]
